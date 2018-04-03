@@ -58,4 +58,4 @@ This maybe expected behaviour for some users https://github.com/ipfs/faq/issues/
 * http://127.0.0.1:8080/ipfs/QmUvRw8e6sgXSAYvpSV8NixFwNkjzPtzHR7ytfb1xq642z/ changeling
 * http://127.0.0.1:8080/ipfs/QmZ719WHMeu5sCqpmpJi2fCkecYUq2oWe5tVCSe4toqBqM/ tech
 * http://127.0.0.1:8080/ipfs/QmUK2DpYqGhmw2T3auXAa18zU82fthZXEih8ctCPgjDW47/ QR Code Dapp
-
+* http://127.0.0.1:8080/ipfs/QmUMLCaNDuLj7QQp4xJZBsEfV9pa8NfdDjwmtDWTMqZDT8/ bigzip ?
