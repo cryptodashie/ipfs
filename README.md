@@ -8,6 +8,8 @@ cat peers | grep -v "/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn" | sed
 This maybe expected behaviour for some users https://github.com/ipfs/faq/issues/155
 
 # ipfs links
+These links have been discovered by crawling the swarm of a connected IPFS client and using the name resolver:
+
 * http://127.0.0.1:8080/ipfs/QmaPckENKVJBmh8YWgxMviF7RXyaAQsucbHYeY65m9UH5s/ Hello IPFS and Mark
 * http://127.0.0.1:8080/ipfs/QmRR16PF8M2ghXH8tUsVXHGZQtbX3jSG3JXwi8K7AwgytD/  hacpai (chinese social network)
 * http://127.0.0.1:8080/ipfs/QmRS4Cux36PK8eFyB5qm9DSiHWBcCrutuzkznNrMrTYYZ2/ blog
@@ -16,11 +18,11 @@ This maybe expected behaviour for some users https://github.com/ipfs/faq/issues/
 * http://127.0.0.1:8080/ipfs/QmYdWbMy8wyVCmq65R4CdFqWGYnPA7V12bX7hf2zxv64AG/ Troys Tools  https://merchantguy.com/
 * http://127.0.0.1:8080/ipfs/QmTi84igYxdn9msuFWsjGmAoYrTRUJAXhDeCJFJyoJWPk6/ blog french
 * http://127.0.0.1:8080/ipfs/QmSuDCsW73pcimSvGKc5WNcE5dEoEiQQVZv1z9hCLDMq3m/ hashes of images to movies (?)
-* http://127.0.0.1:8080/ipfs/QmQ3WcvM4T94Ua19XtcXhL5V7JPQsa6im4sLD33Y6K8QWK/ !!!!NEONAZIS!!!!
+* http://127.0.0.1:8080/ipfs/QmQ3WcvM4T94Ua19XtcXhL5V7JPQsa6im4sLD33Y6K8QWK/ !!!! NEONAZIS !!!!
 * http://127.0.0.1:8080/ipfs/QmfEtwppdhg971UM9yjo18uCeh2AVssV4ebtc4p5iKzc4Y/ crypto
 * http://127.0.0.1:8080/ipfs/QmV8Wek5Kfx8HsAe1wnkJtUobNmjg1UxPhj1yKCT5prL4G/ media (mp3 music?)
 * http://127.0.0.1:8080/ipfs/QmXvM2hdfnkUziffpHzY6JjNtit55ppGzF4LHyg9aYCpPV/ Isthmus is an experimental linux system
-* http://127.0.0.1:8080/ipfs/QmdhEixFS2v1nFi6qtV9svfcFKqwqNRb49mLbjxYbas3VB/ !!!!!MALWARE_LOTS_OF_MALWARE!!!!
+* http://127.0.0.1:8080/ipfs/QmdhEixFS2v1nFi6qtV9svfcFKqwqNRb49mLbjxYbas3VB/ !!!!! MALWARE LOTS OF MALWARE!!!!
 * http://127.0.0.1:8080/ipfs/QmSpMekydrTeAWvUysttoMx5PxtAtjJxWQ9ZMY2WQ7R4cH/ ?
 * http://127.0.0.1:8080/ipfs/QmemWxstAzqq2EEfeTs4bxjbBsbRsakpjAm7x1mSe9YVW4/ ytmnd.com backups?
 * http://127.0.0.1:8080/ipfs/Qmetv78kdAQkdAJ8B9DEw8HCNGVgjtwi8EvM331StJ7Rfg/ camera site?
@@ -58,4 +60,13 @@ This maybe expected behaviour for some users https://github.com/ipfs/faq/issues/
 * http://127.0.0.1:8080/ipfs/QmUvRw8e6sgXSAYvpSV8NixFwNkjzPtzHR7ytfb1xq642z/ changeling
 * http://127.0.0.1:8080/ipfs/QmZ719WHMeu5sCqpmpJi2fCkecYUq2oWe5tVCSe4toqBqM/ tech
 * http://127.0.0.1:8080/ipfs/QmUK2DpYqGhmw2T3auXAa18zU82fthZXEih8ctCPgjDW47/ QR Code Dapp
-* http://127.0.0.1:8080/ipfs/QmUMLCaNDuLj7QQp4xJZBsEfV9pa8NfdDjwmtDWTMqZDT8/ bigzip ?
+* http://127.0.0.1:8080/ipfs/QmUMLCaNDuLj7QQp4xJZBsEfV9pa8NfdDjwmtDWTMqZDT8/ bigzip 
+
+# leak.gz
+A collection of exploits and malware was found on one of the IPFS nodes, it has been mirrored
+as an archive, the password is "malware"
+https://mega.nz/#!4ZkkAS4Y!hW9ZvwHThAxgzZt3CgwBuVHLq7nvwDK4Gf7TC0e-gYM
+
+# hashes.txt
+This file was found on one of the nodes and discovered to contain hash entries for more hosted
+content including images and media links.
