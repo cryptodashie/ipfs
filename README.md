@@ -69,4 +69,7 @@ https://mega.nz/#!4ZkkAS4Y!hW9ZvwHThAxgzZt3CgwBuVHLq7nvwDK4Gf7TC0e-gYM
 
 # hashes.txt
 This file was found on one of the nodes and discovered to contain hash entries for more hosted
-content including images and media links.
+content including images and media links. You can list the file names and contents using:
+
+cat hashes.txt | parallel -j 10 ipfs ls {}
+
