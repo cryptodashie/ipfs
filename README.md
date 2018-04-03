@@ -7,6 +7,9 @@ cat peers | grep -v "/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn" | sed
 
 This maybe expected behaviour for some users https://github.com/ipfs/faq/issues/155
 
+You can also use "./filescan.sh" which will enumerate all the local references and list the filenames to search
+for interesting content.
+
 # ipfs links
 These links have been discovered by crawling the swarm of a connected IPFS client and using the name resolver:
 
