@@ -2,8 +2,9 @@
 IPFS scanning can identify new hosted content or expose information leaks similar to Amazon S3 buckets.
 To find new hosts from the swarm to scan & probe:
 
-ipfs swarm peers | sed "s:.*/ipfs/\(.*\)\$:\1:g" | xargs -n1 -P5 ipfs name resolve > peers
+```ipfs swarm peers | sed "s:.*/ipfs/\(.*\)\$:\1:g" | xargs -n1 -P5 ipfs name resolve > peers
 cat peers | grep -v "/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn" | sed "s|^|http://127.0.0.1:8080|" | xargs open
+```
 
 This maybe expected behaviour for some users https://github.com/ipfs/faq/issues/155
 
@@ -14,8 +15,8 @@ for interesting content.
 These links have been discovered by crawling the swarm of a connected IPFS client and using the name resolver:
 
 * http://127.0.0.1:8080/ipfs/QmaPckENKVJBmh8YWgxMviF7RXyaAQsucbHYeY65m9UH5s/ Hello IPFS and Mark
-* http://127.0.0.1:8080/ipfs/QmRR16PF8M2ghXH8tUsVXHGZQtbX3jSG3JXwi8K7AwgytD/  hacpai (chinese social network)
-* http://127.0.0.1:8080/ipfs/QmRS4Cux36PK8eFyB5qm9DSiHWBcCrutuzkznNrMrTYYZ2/ blog
+* http://127.0.0.1:8080/ipfs/QmRR16PF8M2ghXH8tUsVXHGZQtbX3jSG3JXwi8K7AwgytD/ hacpai (chinese social network)
+* http://127.0.0.1:8080/ipfs/QmRS4Cux36PK8eFyB5qm9DSiHWBcCrutuzkznNrMrTYYZ2/ adult (XXX)
 * http://127.0.0.1:8080/ipfs/QmWUknMePHqv16VsafBj2e1CcUhWQEGhjFsoagaQHJZwiC/ Coincidence detector
 * http://127.0.0.1:8080/ipfs/QmSStvS8Zs7YGiUgTMsRFgzxYKaWq4pPSLBsagc8WkVVxd/ Mikes boobs stuff
 * http://127.0.0.1:8080/ipfs/QmYdWbMy8wyVCmq65R4CdFqWGYnPA7V12bX7hf2zxv64AG/ Troys Tools  https://merchantguy.com/
@@ -63,7 +64,29 @@ These links have been discovered by crawling the swarm of a connected IPFS clien
 * http://127.0.0.1:8080/ipfs/QmUvRw8e6sgXSAYvpSV8NixFwNkjzPtzHR7ytfb1xq642z/ changeling
 * http://127.0.0.1:8080/ipfs/QmZ719WHMeu5sCqpmpJi2fCkecYUq2oWe5tVCSe4toqBqM/ tech
 * http://127.0.0.1:8080/ipfs/QmUK2DpYqGhmw2T3auXAa18zU82fthZXEih8ctCPgjDW47/ QR Code Dapp
-* http://127.0.0.1:8080/ipfs/QmUMLCaNDuLj7QQp4xJZBsEfV9pa8NfdDjwmtDWTMqZDT8/ bigzip 
+* http://127.0.0.1:8080/ipfs/QmUMLCaNDuLj7QQp4xJZBsEfV9pa8NfdDjwmtDWTMqZDT8/ bigzip
+* http://127.0.0.1:8080/ipfs/QmV1imZz8VRiYFw7ZSSUtTFtcaYA5iJXURkxLhEJssBXvy nonsense
+* http://127.0.0.1:8080/ipfs/QmYo3fUw4neYJybh1SBJdebYusw51pd9pTQGACrGgmcwGJ chinese
+* http://127.0.0.1:8080/ipfs/QmPAxQc5kZ8fW5tAUJqbiR9z31nBhG121RViDXKRcNAnT1 namecoin
+* http://127.0.0.1:8080/ipfs/QmWmnvUVCUyyug86ZdUrtZeTabA2QZdpkfMzyt8iRZbtjy cchosting
+* http://127.0.0.1:8080/ipfs/QmW3MTtZmotsFxUNb781Yxq4Hy8XB4HcZBoYCP3N8LMkJB/ DAILYSTORMER NEONAZIS!!!!
+* http://127.0.0.1:8080/ipfs/QmTi84igYxdn9msuFWsjGmAoYrTRUJAXhDeCJFJyoJWPk6/ engineering blog
+* http://127.0.0.1:8080/ipfs/QmeSbuTMCvJSvjj5wgYSYgZ8D78AWFnVTtFMFFmotLTFjV/ Yogsters blog
+* http://127.0.0.1:8080/ipfs/QmYCnmf8TR4cyZpriagEyU9hy48Q7Aq3bvvVTLVDrisURR conversations
+* http://127.0.0.1:8080/ipfs/QmfEtwppdhg971UM9yjo18uCeh2AVssV4ebtc4p5iKzc4Y/ michael space blog
+* http://127.0.0.1:8080/ipfs/QmYC3U1zk4gVUte5zkdgYyySx3uuYN4oqonqC6o6ZVfRkB big list of bitcoin hosts
+* http://127.0.0.1:8080/ipfs/QmaoxkD2rBfqJRJqrwkstPkxPAVtX8EU1dWrCFpUh9RqNJ Russian
+* http://127.0.0.1:8080/ipfs/Qmao5WtLzrZVvGQpmcyHf9iZH5T8fxoPwsrVJjTUZCkxa5 Curvage / Fantasty 81GB of files / 9.8GB ?
+* http://127.0.0.1:8080/ipfs/QmapGa8YvWtoKykMZmdXsd7NoHZ8jupzzoAafgaPZJiExt default hosting
+* http://127.0.0.1:8080/ipfs/QmXBpD37vBm5537pqHwyJRGSaX7hMrkHyp866wqEVU2BE8 ipfs cli helpfile
+* http://127.0.0.1:8080/ipfs/QmWoSxLh3t2yGFCyDVQNYyghSaaQzfRnPefbHzCqtYTu32 page hosted through ifs
+* http://127.0.0.1:8080/ipfs/QmWJQibYDDnY2mrtFKqRQpfFicFQsZ1se6gF2175kveAwx json
+* http://127.0.0.1:8080/ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN hello
+* http://127.0.0.1:8080/ipfs/QmScULBUMN63FJwqcXt9F2fw8nFXtvQHAnMrFnqxKsSLXb game of go
+* http://127.0.0.1:8080/ipfs/QmdYi4ejk3qRRkPtHGgyuh7sLuxrLHHfG74Q1jJbx7feEh/ MY SITE 1.0
+* http://127.0.0.1:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme welcome to IPFS
+* http://127.0.0.1:8080/ipfs/QmTuA9osP2oyxBLpFpTRhtXPj1iRZxVqSeeCDLhGt9rAdD Rick universe
+* http://127.0.0.1:8080/ipfs/QmTiNT6qp7ZmvrDvHJqGBXt4Po8QQeuzLmessP6zPbxDwY/ Alley chat
 
 # leak.gz
 A collection of exploits and malware was found on one of the IPFS nodes, it has been mirrored
@@ -74,5 +97,7 @@ https://mega.nz/#!4ZkkAS4Y!hW9ZvwHThAxgzZt3CgwBuVHLq7nvwDK4Gf7TC0e-gYM
 This file was found on one of the nodes and discovered to contain hash entries for more hosted
 content including images and media links. You can list the file names and contents using:
 
-cat hashes.txt | parallel -j 10 ipfs ls {}
+```cat hashes.txt | parallel -j 10 ipfs ls {}
+```
 
+this file is similar to one output by filescan.sh.
