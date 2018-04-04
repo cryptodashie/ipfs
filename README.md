@@ -1,3 +1,6 @@
+![Logo](/images/ipfs.png)
+IPFS is a distributed web, allowing for sharing content like files, media, blogs and websites.
+
 # ipfs scanning
 IPFS scanning can identify new hosted content or expose information leaks similar to Amazon S3 buckets.
 To find new hosts from the swarm to scan & probe:
@@ -35,7 +38,7 @@ These links have been discovered by crawling the swarm of a connected IPFS clien
 * http://127.0.0.1:8080/ipfs/QmUZerPEWB1b5gx82aus7erJDqYfZgiNkoecNUJwAPkspp/ text files
 * http://127.0.0.1:8080/ipfs/QmXQ12SdgNMQQ7TEHYFDQsiHpuMs2KKFeQ1HcUUcCmogzu/ Aria2 DOWNLOAD MANAGER
 * http://127.0.0.1:8080/ipfs/QmTWJKD9EQpnfpRDgvuyjA5g5C7qLb2dT4cggCqeNCVPi2/ Etherads.co
-* http://127.0.0.1:8080/ipfs/QmPTCijhFCsF7ELgzoEnUKPuUNJvKSjmpykz8KZspSSkVk/ V2RayX-v0.9.2. Software?
+* http://127.0.0.1:8080/ipfs/QmPTCijhFCsF7ELgzoEnUKPuUNJvKSjmpykz8KZspSSkVk/ V2RayX-v0.9.2. Software REPO?
 * http://127.0.0.1:8080/ipfs/QmZwhAnfVMDDwJcLnP81tFcf93Gd34i4nuCENsMZYJWPq7/ GE AVIO????? screenshot
 * http://127.0.0.1:8080/ipfs/QmW8HAWoKXnaG47zfpQSFN54s4w59WX6J2jgwWudbW2qTx/ EARN WALLETS?
 * http://127.0.0.1:8080/ipfs/QmYr9Eug2y85Vi5LWuCFwi45Q38v7tcHXyEujxgqx8ANVx/ configs
@@ -87,6 +90,15 @@ These links have been discovered by crawling the swarm of a connected IPFS clien
 * http://127.0.0.1:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme welcome to IPFS
 * http://127.0.0.1:8080/ipfs/QmTuA9osP2oyxBLpFpTRhtXPj1iRZxVqSeeCDLhGt9rAdD Rick universe
 * http://127.0.0.1:8080/ipfs/QmTiNT6qp7ZmvrDvHJqGBXt4Po8QQeuzLmessP6zPbxDwY/ Alley chat
+* http://127.0.0.1:8080/ipfs/QmTvtxxod2PXZana3aWSVs8beB1pHu3sfKvu1sD1gbr4YP/ Cameron Johnson Brown
+* http://127.0.0.1:8080/ipfs/QmerBqZ7pM5NqAUVo8G1PjHGtihVWJJTDZCXfqMz4jH8T5/ Wanderers musings ethereum blog
+* http://127.0.0.1:8080/ipfs/QmPx1UaGRApBJgn4EAQd5nkB59yuJcKo25CUxRYdKmtHTX/ Chinese blog
+* http://127.0.0.1:8080/ipfs/QmYCnmf8TR4cyZpriagEyU9hy48Q7Aq3bvvVTLVDrisURR some blocks?
+* http://127.0.0.1:8080/ipfs/QmTiNT6qp7ZmvrDvHJqGBXt4Po8QQeuzLmessP6zPbxDwY/ Anonymous Peer2Peer CHAT!!!!!
+* http://127.0.0.1:8080/ipfs/QmQf6awxnZ5iqLvswo93FP5HDSjYiM4kzr9rYLtQtoDeCv/ logfile.ch blog
+* http://127.0.0.1:8080/ipfs/QmSSkP7DsM9w5qknM9PqNixnrQ5BxcywokabqTUNKaNn7c/ Ethereum Casino
+* http://127.0.0.1:8080/ipfs/QmeVFU28Mh13e1em3kDeC9HxSoZiuSfGcxXwXpWM9KeoK3/ Hello Lar World
+
 
 # leak.gz
 A collection of exploits and malware was found on one of the IPFS nodes, it has been mirrored
