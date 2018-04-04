@@ -1,11 +1,11 @@
 ![Logo](/images/ipfs.png)
 
 IPFS is a distributed web, allowing for sharing content like files, media, blogs and websites. This is a project
-to map out the decentralized web to identify interesting content. 
+to map out the decentralized web to identify interesting content.
 
 # ipfs scanning
 IPFS scanning can identify new hosted content or expose information leaks similar to Amazon S3 buckets.
-To find new hosts from the swarm to scan & probe:
+To find new web hosts from the swarm to scan & probe:
 
 ```
 ipfs swarm peers | sed "s:.*/ipfs/\(.*\)\$:\1:g" | xargs -n1 -P5 ipfs name resolve > peers
@@ -14,8 +14,12 @@ cat peers | grep -v "/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn" | sed
 
 This maybe expected behaviour for some users https://github.com/ipfs/faq/issues/155
 
-You can also use "./filescan.sh" which will enumerate all the local references and list the filenames to search
-for interesting content.
+To find new files hosted from nodes:
+```
+./filescan.sh
+```
+
+you can then download content with ips cli tools 
 
 # ipfs links
 These links have been discovered by crawling the swarm of a connected IPFS client and using the name resolver:
@@ -82,7 +86,7 @@ These links have been discovered by crawling the swarm of a connected IPFS clien
 * http://127.0.0.1:8080/ipfs/QmfEtwppdhg971UM9yjo18uCeh2AVssV4ebtc4p5iKzc4Y/ michael space blog
 * http://127.0.0.1:8080/ipfs/QmYC3U1zk4gVUte5zkdgYyySx3uuYN4oqonqC6o6ZVfRkB big list of bitcoin hosts
 * http://127.0.0.1:8080/ipfs/QmaoxkD2rBfqJRJqrwkstPkxPAVtX8EU1dWrCFpUh9RqNJ Russian
-* http://127.0.0.1:8080/ipfs/Qmao5WtLzrZVvGQpmcyHf9iZH5T8fxoPwsrVJjTUZCkxa5 Curvage / Fantasty 81GB of files / 9.8GB ?
+* http://127.0.0.1:8080/ipfs/Qmao5WtLzrZVvGQpmcyHf9iZH5T8fxoPwsrVJjTUZCkxa5 Curvage / Fantasy (xxx?)
 * http://127.0.0.1:8080/ipfs/QmapGa8YvWtoKykMZmdXsd7NoHZ8jupzzoAafgaPZJiExt default hosting
 * http://127.0.0.1:8080/ipfs/QmXBpD37vBm5537pqHwyJRGSaX7hMrkHyp866wqEVU2BE8 ipfs cli helpfile
 * http://127.0.0.1:8080/ipfs/QmWoSxLh3t2yGFCyDVQNYyghSaaQzfRnPefbHzCqtYTu32 page hosted through ifs
@@ -117,3 +121,7 @@ cat hashes.txt | parallel -j 10 ipfs ls {}
 ```
 
 this file is similar to one output by filescan.sh.
+
+# logfile.txt
+
+example output from filescan.sh
