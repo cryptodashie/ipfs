@@ -5,7 +5,8 @@ IPFS is a distributed web, allowing for sharing content like files, media, blogs
 IPFS scanning can identify new hosted content or expose information leaks similar to Amazon S3 buckets.
 To find new hosts from the swarm to scan & probe:
 
-```ipfs swarm peers | sed "s:.*/ipfs/\(.*\)\$:\1:g" | xargs -n1 -P5 ipfs name resolve > peers
+```
+ipfs swarm peers | sed "s:.*/ipfs/\(.*\)\$:\1:g" | xargs -n1 -P5 ipfs name resolve > peers
 cat peers | grep -v "/ipfs/QmUNLLsPACCz1vLxQVkXqqLX5R1X345qqfHbsf67hvA3Nn" | sed "s|^|http://127.0.0.1:8080|" | xargs open
 ```
 
@@ -109,7 +110,8 @@ https://mega.nz/#!4ZkkAS4Y!hW9ZvwHThAxgzZt3CgwBuVHLq7nvwDK4Gf7TC0e-gYM
 This file was found on one of the nodes and discovered to contain hash entries for more hosted
 content including images and media links. You can list the file names and contents using:
 
-```cat hashes.txt | parallel -j 10 ipfs ls {}
+```
+cat hashes.txt | parallel -j 10 ipfs ls {}
 ```
 
 this file is similar to one output by filescan.sh.
