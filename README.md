@@ -1,6 +1,7 @@
 ![Logo](/images/ipfs.png)
 
-IPFS is a distributed web, allowing for sharing content like files, media, blogs and websites.
+IPFS is a distributed web, allowing for sharing content like files, media, blogs and websites. This is a project
+to map out the decentralized web to identify interesting content. 
 
 # ipfs scanning
 IPFS scanning can identify new hosted content or expose information leaks similar to Amazon S3 buckets.
